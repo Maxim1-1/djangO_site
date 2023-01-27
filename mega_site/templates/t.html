@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> #base.html
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+
+</head>
+
+
+{% load bootstrap5 %}
+
+
+<form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form layout='vertical' %}
+    {% buttons submit='Сохранить' %}{% endbuttons %}
+</form>
+{% load static %}
+<img src="{% static 'blog/img/img.jpg' %}" alt="My image">
+
+<body>
+
+
+</body>
+</html>
+

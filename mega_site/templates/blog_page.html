@@ -1,0 +1,50 @@
+{% extends "base_blog_page.html" %}
+
+{% block dashboard %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-5">
+            <div class="text-center">
+                {% load static %}
+                <img src="{% static 'blog/img/dashboard.png' %}" class="img-fluid" alt="dashbord">
+            </div>
+
+        </div>
+    </div>
+
+    {% endblock %}
+    {% block filter %}
+
+    <div class="row">
+        <div class="text-center">
+
+            {% load static %}
+            <img src="{% static 'blog/img/filter.png' %}" class="img-fluid" alt="filter">
+
+        </div>
+    {% endblock %}
+
+
+
+        {% block description %}
+        <div class="row my-5">
+            <div class="desc" style="font-size: 20px;">
+                Now, I'm not a gambler by any means. But I have made enough money from bookmakers in
+                just
+                six months to pay for an £860 flight (return) to Australia using matched betting. And I've got company
+                too
+                after walking a good friend through this technique.
+
+                The result is this guide, where I'll share the exact steps with you too. It includes screenshots and a
+                free
+                oddsmatcher tool. Please note you must be over 18.
+            </div>
+
+        </div>
+
+        {% endblock %}
+
+
+    </div>
+</div>

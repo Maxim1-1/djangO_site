@@ -12,7 +12,8 @@ def index(request):
     return HttpResponse("MEga ЖОПА")
 
 
-def blog_page(request):
+def blog_page(request, post_slug):
+    s = post_slug
     return render(request, "blog_page.html", {"form": NewForm})
 
 

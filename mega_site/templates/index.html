@@ -18,7 +18,12 @@
         {% for post in posts %}
         <div class="col-sm-3 ">
             <div class="card ">
+                {% if post.img %}
                 <img src="{% static 'blog/img/trol.jpg' %}" class="card-img-top" alt="">
+<!--                <img src="{% static 'blog/media/post/img/test.jpg' %}" class="card-img-top" alt="">-->
+                {% else %}
+                <img src="{% static 'blog/img/trol.jpg' %}" class="card-img-top" alt="">
+                {% endif %}
                 <div class="card-body">
                     <h5 class="card-title">{{post.title}}</h5>
                     <p class="card-text">{{post.description}}</p>
